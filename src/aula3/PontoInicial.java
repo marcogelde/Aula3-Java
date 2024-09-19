@@ -14,8 +14,11 @@ public class PontoInicial {
         carlos.nome = "Carlos Manica";
         carlos.idade = 17;
 
-        System.out.println(marcelo.nome + " tem " + marcelo.idade); //Imprimir o hash
-        System.out.println(carlos.nome + " tem " + carlos.idade);
+        System.out.println(marcelo.nome + " está logado: " + marcelo.estaLogado);
+        System.out.println(carlos.nome + " está logado: " + carlos.estaLogado);
+
+        Carro carro = new Carro();
+        System.out.println(carro.acelerar());
 
     }
 }
