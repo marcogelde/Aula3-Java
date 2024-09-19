@@ -21,8 +21,22 @@ public class PontoInicial {
         System.out.println(carro.acelerar());
 
         Cachorro rex = new Cachorro();
-        rex.nome = "Rex";
+
+        rex.atribuiNome("Rex");
         rex.idade = 3;
+
+        System.out.println(rex.obterNome());
         rex.latir();
+
+        /*
+        Conta marcelo = new Conta();
+        marcelo.sacar() = 0;
+
+        public void sacar(int valor){
+            if(usuario == conta.usuario){
+                saldo -= valor;
+            }
+        }
+         */
     }
 }
