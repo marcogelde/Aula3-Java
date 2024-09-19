@@ -38,5 +38,18 @@ public class PontoInicial {
             }
         }
          */
+        Livro sacoDeOssos = new Livro("Stephen King", "Saco de Ossos", 568);
+
+        /*
+        sacoDeOssos.setAutor("Stephen King");
+        sacoDeOssos.setTitulo("Saco de Ossos");
+        sacoDeOssos.setPaginas(568);
+        */
+
+        System.out.println(
+                sacoDeOssos.getAutor() + " escreveu " +
+                sacoDeOssos.getTitulo() + " com " +
+                sacoDeOssos.getPaginas() + " páginas "
+        );
     }
 }
