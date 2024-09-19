@@ -20,5 +20,9 @@ public class PontoInicial {
         Carro carro = new Carro();
         System.out.println(carro.acelerar());
 
+        Cachorro rex = new Cachorro();
+        rex.nome = "Rex";
+        rex.idade = 3;
+        rex.latir();
     }
 }
