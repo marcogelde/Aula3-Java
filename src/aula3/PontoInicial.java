@@ -1,5 +1,8 @@
 package aula3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PontoInicial {
     public static void main(String[] args) {
 
@@ -20,24 +23,6 @@ public class PontoInicial {
         Carro carro = new Carro();
         System.out.println(carro.acelerar());
 
-        Cachorro rex = new Cachorro();
-
-        rex.atribuiNome("Rex");
-        rex.idade = 3;
-
-        System.out.println(rex.obterNome());
-        rex.latir();
-
-        /*
-        Conta marcelo = new Conta();
-        marcelo.sacar() = 0;
-
-        public void sacar(int valor){
-            if(usuario == conta.usuario){
-                saldo -= valor;
-            }
-        }
-         */
         Livro sacoDeOssos = new Livro("Stephen King", "Saco de Ossos", 568);
 
         /*
@@ -56,15 +41,34 @@ public class PontoInicial {
         Gato felix = new Gato();
         Peixe glubglub = new Peixe();
 
-        felix.emitirSom("Felix");
-        felix.emitirSom();
+        felix.fazerSom("Felix");
+        felix.fazerSom();
 
-        glubglub.emitirSom("Glubglub");
-        glubglub.emitirSom();
+        glubglub.fazerSom("Glubglub");
+        glubglub.fazerSom();
 
         Pessoa pessoa = new Pessoa();
         pessoa.setNome("Marco");
+        pessoa.setIdade(29);
         System.out.println(pessoa.getNome());
+        System.out.println(pessoa.getIdade());
 
+        // Criando o cachorro rex e chamando o método fazerSom
+        Cachorro rex = new Cachorro();
+        rex.setNome("Rex");
+        rex.idade = 3;
+        rex.fazerSom("Rex");
+
+        // Criação de uma lista de veiculos
+        List<Veiculo> veiculos = new ArrayList<>();
+
+        // Adicionando objetos Carro e Moto à lista
+        veiculos.add(new Carro());
+        veiculos.add(new Moto());
+
+        // Iterando pela lista e chamando o método ligar
+        for (Veiculo veiculo : veiculos) {
+            veiculo.ligar();
+        }
     }
 }

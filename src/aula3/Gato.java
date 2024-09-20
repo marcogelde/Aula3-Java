@@ -3,7 +3,7 @@ package aula3;
 public class Gato extends Animal {
 
     @Override
-    public void emitirSom() {
+    public void fazerSom() {
         System.out.println("Miau miau!");
     }
 }

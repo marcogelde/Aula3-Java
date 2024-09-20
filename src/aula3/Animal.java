@@ -4,11 +4,11 @@ public class Animal {
 
     private String nome;
 
-    public void emitirSom(){
+    public void fazerSom(){
         System.out.println("O animal emite som");
     }
 
-    public void emitirSom(String nome){
+    public void fazerSom(String nome){
         System.out.println(nome + " emite som");
     }
 
