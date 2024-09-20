@@ -51,5 +51,20 @@ public class PontoInicial {
                 sacoDeOssos.getTitulo() + " com " +
                 sacoDeOssos.getPaginas() + " páginas "
         );
+
+
+        Gato felix = new Gato();
+        Peixe glubglub = new Peixe();
+
+        felix.emitirSom("Felix");
+        felix.emitirSom();
+
+        glubglub.emitirSom("Glubglub");
+        glubglub.emitirSom();
+
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Mathias");
+        System.out.println(pessoa.getNome());
+
     }
 }
