@@ -63,7 +63,7 @@ public class PontoInicial {
         glubglub.emitirSom();
 
         Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Mathias");
+        pessoa.setNome("Marco");
         System.out.println(pessoa.getNome());
 
     }
